@@ -33,6 +33,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Phone number formatting
     const phoneInput = document.getElementById('phone');
     phoneInput.addEventListener('input', formatPhoneNumber);
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
 });
 
 // 전화번호 자동 포맷팅 (010-1234-5678)
