@@ -200,27 +200,15 @@ body {
     width: 100%;
     height: 200px;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
     overflow: hidden;
+    background: #e2e8f0;
 }
 
-.curriculum-image-placeholder.gradient-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.curriculum-image-placeholder.gradient-2 {
-    background: linear-gradient(135deg, #764ba2 0%, #F093FB 100%);
-}
-
-.curriculum-image-placeholder.gradient-3 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.placeholder-icon {
-    font-size: 4rem;
+.curriculum-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .curriculum-card h3 {
@@ -289,40 +277,13 @@ body {
     justify-content: center;
     border-radius: 12px;
     overflow: hidden;
+    background: #e2e8f0;
 }
 
-.tool-icon span {
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.tool-gradient-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.tool-gradient-2 {
-    background: linear-gradient(135deg, #764ba2 0%, #F093FB 100%);
-}
-
-.tool-gradient-3 {
-    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
-}
-
-.tool-gradient-4 {
-    background: linear-gradient(135deg, #FF9E00 0%, #FFC837 100%);
-}
-
-.tool-gradient-5 {
-    background: linear-gradient(135deg, #31A8FF 0%, #0078FF 100%);
-}
-
-.tool-gradient-6 {
-    background: linear-gradient(135deg, #00D4AA 0%, #00C9A7 100%);
-}
-
-.tool-gradient-7 {
-    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+.tool-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .tool-card h3 {
@@ -377,21 +338,18 @@ body {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #e2e8f0;
 }
 
-.education-gradient-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.education-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.education-gradient-2 {
-    background: linear-gradient(135deg, #764ba2 0%, #F093FB 100%);
-}
-
-.education-icon {
-    font-size: 5rem;
+.education-card:hover .education-image img {
+    transform: scale(1.05);
 }
 
 .education-card h3 {
