@@ -61,18 +61,18 @@ const FORM_FIELDS = {
 ## 🚀 사용 방법
 
 1. 웹 서버에 파일 업로드 또는 로컬에서 실행
-2. `index.html` 파일을 브라우저로 열기
+2. `mbc-kdt-landing.html` 파일을 브라우저로 열기
 3. 구글 폼 연동 완료!
 
 ## 📁 파일 구조
 
 ```
 .
-├── index.html      # 메인 HTML 파일
-├── styles.css      # 스타일시트
-├── script.js       # JavaScript 로직
-├── images/         # 이미지 폴더 (커리큘럼 이미지)
-└── README.md       # 이 파일
+├── mbc-kdt-landing.html  # 메인 HTML 파일
+├── styles.css            # 스타일시트
+├── script.js             # JavaScript 로직
+├── images/               # 이미지 폴더 (커리큘럼 이미지)
+└── README.md             # 이 파일
 ```
 
 ## 🎯 커스터마이징
@@ -83,7 +83,7 @@ const FORM_FIELDS = {
 - 버튼 색상: `.cta-button`, `.submit-button`
 
 ### 내용 수정
-`index.html` 파일에서:
+`mbc-kdt-landing.html` 파일에서:
 - 서비스 설명 변경
 - 기능 카드 내용 수정
 - 연락처 정보 추가
@@ -94,7 +94,7 @@ const FORM_FIELDS = {
 
 **실제 이미지로 교체하기**:
 1. `images/` 폴더에 이미지 파일 추가
-2. `index.html`에서 다음 부분을 수정:
+2. `mbc-kdt-landing.html`에서 다음 부분을 수정:
    ```html
    <!-- 변경 전 (placeholder 사용) -->
    <img src="https://via.placeholder.com/400x200/..." alt="..." class="curriculum-image">
