@@ -71,6 +71,7 @@ const FORM_FIELDS = {
 ├── index.html      # 메인 HTML 파일
 ├── styles.css      # 스타일시트
 ├── script.js       # JavaScript 로직
+├── images/         # 이미지 폴더 (커리큘럼 이미지)
 └── README.md       # 이 파일
 ```
 
@@ -86,6 +87,26 @@ const FORM_FIELDS = {
 - 서비스 설명 변경
 - 기능 카드 내용 수정
 - 연락처 정보 추가
+
+### 이미지 교체 방법
+
+**현재 상태**: 각 커리큘럼 카드에 placeholder 이미지를 사용하고 있습니다.
+
+**실제 이미지로 교체하기**:
+1. `images/` 폴더에 이미지 파일 추가
+2. `index.html`에서 다음 부분을 수정:
+   ```html
+   <!-- 변경 전 (placeholder 사용) -->
+   <img src="https://via.placeholder.com/400x200/..." alt="..." class="curriculum-image">
+
+   <!-- 변경 후 (로컬 이미지 사용) -->
+   <img src="images/your-image.jpg" alt="..." class="curriculum-image">
+   ```
+
+**권장 이미지 사양**:
+- 권장 크기: 400x200px 이상
+- 형식: JPG, PNG, WebP
+- 최적화된 이미지 사용 권장 (파일 크기 100KB 이하)
 
 ## 📱 브라우저 지원
 
